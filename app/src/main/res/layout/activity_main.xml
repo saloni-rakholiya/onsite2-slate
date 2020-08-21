@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAB7CE"
+    tools:context=".MainActivity">
+
+
+<fragment
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    class="com.example.onsite2.frag1"
+    android:layout_below="@id/textView"
+    tools:layout="@layout/fragment1"
+    android:id="@+id/f1"
+    />
+
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/f2"
+        class="com.example.onsite2.frag2"
+        tools:layout="@layout/fragment2"
+        android:layout_below="@+id/textView2"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textColor="#9F1C12"
+        android:text="SLATE 1"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_below="@id/f1"
+        android:layout_centerHorizontal="true"
+        android:textColor="#9F1C12"
+        android:layout_height="wrap_content"
+        android:text="SLATE 2" />
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_below="@+id/f2"
+            android:layout_centerHorizontal="true"
+            android:textSize="24dp"
+            android:background="@drawable/bg"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="CLEAR SLATE" />
+
+    <!--<Button
+        android:id="@+id/yellow"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:background="#FFEB3B"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btn"/>
+
+    <Button
+        android:id="@+id/green"
+        android:layout_toRightOf="@id/yellow"
+        android:layout_below="@id/btn"
+        android:layout_width="50dp"
+        android:background="#00FF00"
+        android:layout_height="wrap_content"
+        android:text="" />
+-->
+
+</RelativeLayout>
